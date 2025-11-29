@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certificates | Ayush Mukherjee</title>
+
+    <!-- Tailwind + icons (same as main site) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        engineer: {
+                            bg: '#F8FAFC',
+                            light: '#F1F5F9',
+                            dim: '#94A3B8',
+                            DEFAULT: '#64748B',
+                            accent: '#446071',
+                            dark: '#0F172A',
+                            border: '#CBD5E1',
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['"Share Tech Mono"', 'monospace'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-engineer-bg text-slate-700 font-sans">
+
+    <div class="max-w-5xl mx-auto px-6 py-10">
+        <!-- Top bar -->
+        <div class="flex items-center justify-between mb-8">
+            <h1 class="text-2xl md:text-3xl font-bold text-engineer-dark">
+                Certificates &amp; Credentials
+            </h1>
+            <a href="#"
+   onclick="backToBlueprint(); return false;"
+   class="inline-flex items-center gap-2 text-xs font-mono text-engineer-accent hover:text-engineer-dark">
+  <i class="bi bi-arrow-left"></i>
+  BACK TO BLUEPRINT
+</a>
+
+        </div>
+
+        <!-- Note -->
+        <p class="text-sm text-slate-500 mb-8">
+            Selected certificates linked from the Blueprint CV. Click on any title in the CV to jump here.
+        </p>
+
+        <!-- MSc Project Management -->
+        <section id="msc-pm" class="mb-10 border border-engineer-border bg-white rounded-sm shadow-sm p-6">
+            <div class="flex items-center justify-between mb-3">
+                <h2 class="text-lg font-semibold text-engineer-dark">
+                    MSc in Project Management – UCD Michael Smurfit Graduate Business School
+                </h2>
+                <span class="text-xs text-slate-500">Education</span>
+            </div>
+            <p class="text-sm text-slate-600 mb-4">
+                Offer letter / enrolment confirmation and academic transcript (when available).
+            </p>
+            <!-- Replace href/src below with your actual file names -->
+            <a href="certs/msc-pm-offer.pdf"
+               target="_blank"
+               class="inline-flex items-center gap-2 text-sm text-engineer-accent hover:text-engineer-dark">
+                <i class="bi bi-file-earmark-pdf"></i>
+                View MSc PM Offer / Enrolment (PDF)
+            </a>
+        </section>
+
+        <!-- BEng Mechanical -->
+        <section id="beng-mech" class="mb-10 border border-engineer-border bg-white rounded-sm shadow-sm p-6">
+            <div class="flex items-center justify-between mb-3">
+                <h2 class="text-lg font-semibold text-engineer-dark">
+                    BEng Mechanical Engineering – Trinity College Dublin &amp; Thapar
+                </h2>
+                <span class="text-xs text-slate-500">Education</span>
+            </div>
+            <p class="text-sm text-slate-600 mb-4">
+                Degree certificate / transcript for the 2+2 Mechanical Engineering programme.
+            </p>
+            <a href="certs/beng-mech-certificate.pdf"
+               target="_blank"
+               class="inline-flex items-center gap-2 text-sm text-engineer-accent hover:text-engineer-dark">
+                <i class="bi bi-file-earmark-pdf"></i>
+                View Mechanical Engineering Degree (PDF)
+            </a>
+        </section>
+
+        <!-- EY Analyst -->
+        <section id="ey-analyst" class="mb-10 border border-engineer-border bg-white rounded-sm shadow-sm p-6">
+            <div class="flex items-center justify-between mb-3">
+                <h2 class="text-lg font-semibold text-engineer-dark">
+                    Analyst – Ernst &amp; Young LLP (EY), Mumbai
+                </h2>
+                <span class="text-xs text-slate-500">Professional</span>
+            </div>
+            <p class="text-sm text-slate-600 mb-4">
+                Employment / experience letter and reference documentation.
+            </p>
+            <a href="certs/ey-analyst-letter.pdf"
+               target="_blank"
+               class="inline-flex items-center gap-2 text-sm text-engineer-accent hover:text-engineer-dark">
+                <i class="bi bi-file-earmark-pdf"></i>
+                View EY Analyst Experience Letter (PDF)
+            </a>
+        </section>
+
+            <!-- Audi Internship -->
+    <section id="audi-internship"
+             class="mb-10 border border-engineer-border bg-white rounded-sm shadow-sm p-6">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-lg font-semibold text-engineer-dark">
+          Intern – Service &amp; Body-Shop Workshops – Audi
+        </h2>
+        <span class="text-xs text-slate-500">Professional</span>
+      </div>
+      <p class="text-sm text-slate-600 mb-4">
+        Internship / training certificate from Audi service and body-shop workshops, confirming exposure
+        to premium automotive maintenance workflows and quality standards.
+      </p>
+      <!-- Update this href to the actual file name/path for your Audi certificate -->
+      <a href="certs/audi-internship-certificate.pdf"
+         target="_blank"
+         class="inline-flex items-center gap-2 text-sm text-engineer-accent hover:text-engineer-dark">
+        <i class="bi bi-file-earmark-pdf"></i>
+        View Audi Internship Certificate (PDF)
+      </a>
+    </section>
+
+
+        <!-- Add more sections as needed, following the same pattern -->
+    </div>
+    <script>
+  function backToBlueprint() {
+    // Try to close this tab (works if opened by window.open)
+    window.close();
+
+    // Fallback: if close is blocked, navigate back in this tab
+    window.location.href = 'index.html#cv';
+  }
+</script>
+
+</body>
+</html>

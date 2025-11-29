@@ -111,8 +111,8 @@
                 <span class="font-mono font-bold text-engineer-dark tracking-tighter border-l-2 border-engineer-accent pl-2">AM.ENG</span>
             </div>
             <div class="hidden md:flex space-x-8 font-mono text-sm">
-                <a href="#about" class="hover:text-engineer-accent transition-colors">WHO_I_AM</a>
-                <a href="#cv" class="hover:text-engineer-accent transition-colors">BLUEPRINT_CV</a>
+                <a href="#about" class="hover:text-engineer-accent transition-colors">WHO I AM</a>
+                <a href="#cv" class="hover:text-engineer-accent transition-colors">BLUEPRINT-CV</a>
                 <a href="#quirks" class="hover:text-engineer-accent transition-colors">QUIRKS</a>
                 <a href="#contact" class="hover:text-engineer-accent transition-colors">CONTACT</a>
             </div>
@@ -123,8 +123,8 @@
         </div>
         <!-- Mobile Drawer -->
         <div id="mobileMenu" class="hidden bg-white border-b border-engineer-border p-4 absolute w-full">
-            <a href="#about" class="block py-2 font-mono text-sm hover:bg-gray-50">WHO_I_AM</a>
-            <a href="#cv" class="block py-2 font-mono text-sm hover:bg-gray-50">BLUEPRINT_CV</a>
+            <a href="#about" class="block py-2 font-mono text-sm hover:bg-gray-50">WHO I AM</a>
+            <a href="#cv" class="block py-2 font-mono text-sm hover:bg-gray-50">BLUEPRINT-CV</a>
             <a href="#quirks" class="block py-2 font-mono text-sm hover:bg-gray-50">QUIRKS</a>
             <a href="#contact" class="block py-2 font-mono text-sm hover:bg-gray-50">CONTACT</a>
         </div>
@@ -187,20 +187,25 @@
     <section id="about" class="py-20 bg-white border-y border-engineer-border relative">
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Left: Image/Graphic area -->
-                <div class="relative p-8 border-2 border-dashed border-engineer-dim rounded-sm bg-engineer-light">
-                    <div class="absolute -top-3 -left-3 bg-white px-2 font-mono text-xs text-engineer-accent border border-engineer-border">FIG. 1.0</div>
-                    <!-- Using a solid div placeholder that mimics the prompt instructions 'No bright colors' -->
-                    <div class="aspect-[4/3] bg-engineer-accent/10 flex items-center justify-center relative overflow-hidden group">
-                        <i class="bi bi-person-gear text-6xl text-engineer-accent/50 group-hover:scale-110 transition-transform duration-500"></i>
-                        <!-- Technical overlay lines -->
-                        <div class="absolute inset-0 w-full h-full border border-white/20 m-4"></div>
-                        <div class="absolute bottom-4 right-4 font-mono text-xs text-engineer-dim">
-                            DESIGN_SPEC: HUMAN<br>
-                            VERSION: 2.1
-                        </div>
-                    </div>
+                            <!-- Left: Photo area -->
+            <div class="relative p-8 border-2 border-dashed border-engineer-dim rounded-sm bg-engineer-light">
+                <div class="absolute -top-3 -left-3 bg-white px-2 font-mono text-xs text-engineer-accent border border-engineer-border">
+                    FIG. 1.0
                 </div>
+
+                <div class="aspect-[4/3] bg-engineer-accent/5 flex items-center justify-center relative overflow-hidden group rounded-sm">
+                    <!-- Your photo -->
+                    <img src="Prof_pic.jpg"
+                         alt="Portrait of Ayush Mukherjee"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+
+                    <!-- Overlay frame -->
+                    <div class="absolute inset-0 w-full h-full border border-white/30 m-4 pointer-events-none"></div>
+
+                    
+                </div>
+            </div>
+
 
                 <!-- Right: Text -->
                 <div>
@@ -218,9 +223,7 @@
     Currently pursuing my Master's in Project Management, I aim to bridge the gap between complex technical requirements and efficient project delivery. I don't just understand how things are built; I understand how to get them built on time and within budget.
 </p>
 
-<div class="grid grid-cols-2 gap-4 mt-8">
-    ...
-</div>
+
 
                     
                     <div class="grid grid-cols-2 gap-4 mt-8">
@@ -238,403 +241,325 @@
         </div>
     </section>
 
-            <!-- CV / BLUEPRINT SECTION -->
+                <!-- CV / BLUEPRINT SECTION -->
     <section id="cv" class="py-20 bg-engineer-bg relative">
         <!-- Background grid graphic -->
         <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
         <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <!-- Header + Download button -->
             <div class="mb-10 md:mb-16">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-        <!-- Left: Title & subtitle -->
-        <div class="text-center md:text-left">
-            <span class="font-mono text-engineer-accent text-sm tracking-widest">TECHNICAL SPECIFICATIONS</span>
-            <h2 class="text-3xl md:text-4xl font-bold text-engineer-dark mt-2">THE BLUEPRINT (CV)</h2>
-            <div class="w-24 h-1 bg-engineer-dim mt-4 mx-auto md:mx-0"></div>
-        </div>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <!-- Left: Title & subtitle -->
+                    <div class="text-center md:text-left">
+                        <span class="font-mono text-engineer-accent text-sm tracking-widest">TECHNICAL SPECIFICATIONS</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-engineer-dark mt-2">THE BLUEPRINT (CV)</h2>
+                        <div class="w-24 h-1 bg-engineer-dim mt-4 mx-auto md:mx-0"></div>
+                    </div>
 
-        <!-- Right: Download CV button -->
-        <div class="flex justify-center md:justify-end">
-            <a href="AyushM_CV.pdf"
-               download
-               class="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-engineer-border bg-white/80
-                      text-xs md:text-sm font-mono text-engineer-dark hover:bg-engineer-accent hover:text-white
-                      hover:border-engineer-accent transition">
-                <i class="bi bi-file-earmark-arrow-down text-base"></i>
-                <span>DOWNLOAD CV (PDF)</span>
-            </a>
-        </div>
-    </div>
+                    <!-- Right: Download CV button -->
+                    <div class="flex justify-center md:justify-end">
+                        <a href="AyushM_CV.pdf"
+                           download
+                           class="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-engineer-border bg-white/80
+                                  text-xs md:text-sm font-mono text-engineer-dark hover:bg-engineer-accent hover:text-white
+                                  hover:border-engineer-accent transition">
+                            <i class="bi bi-file-earmark-arrow-down text-base"></i>
+                            <span>DOWNLOAD CV (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1. PROFILE SUMMARY -->
+            <div class="bg-white p-6 md:p-8 border border-engineer-light shadow-sm rounded-sm">
+                <h3 class="font-mono text-sm text-engineer-accent tracking-[0.25em] mb-3">PROFILE SUMMARY</h3>
+                <p class="text-sm md:text-base text-slate-700 leading-relaxed">
+                    Mechanical Engineer currently working as an Analyst at <span class="font-semibold">Ernst &amp; Young LLP (EY), Mumbai</span>,
+                    with experience across fraud investigation and construction delay / variation claims. I am particularly interested in
+                    <span class="font-semibold text-engineer-accent">energy transition and decarbonisation</span> and how large projects
+                    can move organisations toward net zero targets.
+                </p>
+                <p class="text-sm md:text-base text-slate-700 leading-relaxed mt-3">
+                    My final-year engineering dissertation focused on <span class="font-semibold">hydrogen-fuelled internal combustion engines
+                    for heavy-duty vehicles</span>, analysing air-boosting, EGR and their impacts on power delivery and efficiency. Alongside
+                    this, I have built practical experience through internships in design engineering and automotive service, international
+                    volunteering, and part-time customer-facing work.
+                </p>
+            </div>
+
+            <!-- 2. CORE SKILLS & TOOLS + 3. PROJECT EXPERIENCE -->
+            <div class="mt-10 grid md:grid-cols-2 gap-8">
+                <!-- CORE SKILLS & TOOLS -->
+                <div class="bg-white p-6 md:p-8 border border-engineer-light shadow-sm rounded-sm">
+                    <h3 class="font-mono text-sm text-engineer-accent tracking-[0.25em] mb-4">CORE SKILLS &amp; TOOLS</h3>
+
+                    <div class="space-y-4 text-sm text-slate-700">
+                        <div>
+                            <div class="font-semibold text-engineer-dark mb-1">Programming &amp; Scripting</div>
+                            <p>C, C++, Python, shell scripting.</p>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-engineer-dark mb-1">Design &amp; CAD</div>
+                            <p>AutoCAD, SolidWorks, Creo, GStarCAD, Simscale.</p>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-engineer-dark mb-1">Engineering Tools &amp; Analysis</div>
+                            <p>Arduino, Raspberry Pi, mechanical design &amp; material behaviour, MATLAB (modelling &amp; simulations).</p>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-engineer-dark mb-1">Safety &amp; Compliance</div>
+                            <p>Understanding of safety protocols, compliance standards and ISO requirements in engineering contexts.</p>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-engineer-dark mb-1">Productivity &amp; Documentation</div>
+                            <p>MS Office (Word, Excel, PowerPoint); strong interest in research, analysis and clear technical reporting.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT EXPERIENCE -->
+                <div class="bg-white p-6 md:p-8 border border-engineer-light shadow-sm rounded-sm">
+                    <h3 class="font-mono text-sm text-engineer-accent tracking-[0.25em] mb-4">PROJECT EXPERIENCE</h3>
+
+                    <div class="space-y-4 text-sm text-slate-700">
+                        <div>
+                            <div class="flex justify-between items-baseline">
+                                <span class="font-semibold text-engineer-dark">Hydrogen-Fuelled IC Engine Dissertation</span>
+                                <span class="text-xs text-slate-500">2022–2023</span>
+                            </div>
+                            <p class="mt-1">
+                                Desktop research on hydrogen-fuelled internal combustion engines for heavy-duty vehicles, exploring
+                                turbocharging / supercharging, EGR and their effects on power delivery and efficiency.
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-baseline">
+                                <span class="font-semibold text-engineer-dark">Arduino &amp; IoT Builds</span>
+                                <span class="text-xs text-slate-500">2019</span>
+                            </div>
+                            <p class="mt-1">
+                                Built an object-avoiding 4x4 car, keypad-based password lock systems and Raspberry Pi–based facial
+                                recognition and IoT projects, combining hardware, control logic and basic software integration.
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-baseline">
+                                <span class="font-semibold text-engineer-dark">Education &amp; Culture Project (AIESEC)</span>
+                                <span class="text-xs text-slate-500">2018</span>
+                            </div>
+                            <p class="mt-1">
+                                Delivered a 5-week programme for 5th–9th grade students in Covasna, Romania, using games and creative
+                                workshops to teach English and promote cross-cultural understanding.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. PROFESSIONAL EXPERIENCE -->
+            <div class="mt-12">
+                <h3 class="font-mono text-sm text-engineer-accent tracking-[0.25em] mb-4">PROFESSIONAL EXPERIENCE</h3>
+
+                <div class="space-y-6">
+                    <!-- EY -->
+                    <div class="bg-white p-6 border border-engineer-light shadow-sm rounded-sm">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1">
+                            <div>
+                                <div class="font-semibold text-engineer-dark">
+    <a href="#"
+       onclick="openCertificate('ey-analyst'); return false;"
+       class="inline-flex items-center gap-1 hover:underline hover:text-engineer-accent">
+        <span>Analyst</span>
+        <i class="bi bi-link-45deg text-[11px] opacity-70"></i>
+    </a>
 </div>
 
 
-            <!-- Timeline Layout -->
-            <div class="relative">
-                <!-- Center Line -->
-                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-engineer-border"></div>
 
-                <!-- ITEM 1: BEng Computer Engineering – The University of Hong Kong (2017–2019) -->
-                <div class="relative mb-12 md:mb-16 group">
-                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between w-full">
-                        <!-- Date -->
-                        <div class="md:w-5/12 text-center md:text-right pr-0 md:pr-8 mb-4 md:mb-0 order-1 md:order-1">
-                            <div class="font-mono text-engineer-dark font-bold text-xl">2017 – 2019</div>
-                            <div class="text-sm text-slate-500">Hong Kong</div>
-                        </div>
-                        
-                        <!-- Icon -->
-                        <div class="md:w-2/12 flex justify-center order-1 md:order-2 relative py-2 md:py-0">
-                            <div class="w-12 h-12 bg-white border-2 border-engineer-dim rounded-full flex items-center justify-center shadow z-10 group-hover:scale-110 transition-transform">
-                                <i class="bi bi-pc-display-horizontal text-engineer-dim text-lg"></i>
+                                <div class="text-xs font-mono text-engineer-dim">
+                                    ERNST &amp; YOUNG LLP (EY) · Mumbai, India
+                                </div>
                             </div>
+                            <div class="text-xs text-slate-500">2024–2025</div>
                         </div>
-
-                        <!-- Content -->
-                        <div class="md:w-5/12 pl-0 md:pl-8 order-2 md:order-3 bg-white p-6 border border-engineer-light shadow-sm rounded-sm w-full">
-                            <h3 class="font-bold text-engineer-dark text-lg">BEng Computer Engineering (Early Studies)</h3>
-                            <h4 class="font-mono text-xs text-engineer-dim mb-3">
-                                THE UNIVERSITY OF HONG KONG
-                            </h4>
-                            <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                                <li>Completed early years in Computer Engineering before pivoting to Mechanical Engineering.</li>
-                                <li>Gained foundations in programming, logic and systems thinking.</li>
-                                <li>Experienced a multicultural academic environment and international teamwork.</li>
-                            </ul>
-                        </div>
+                        <ul class="mt-3 text-sm text-slate-700 space-y-1">
+                            <li>Worked across fraud investigation (ESI review) and construction projects (delay, variation and contractual claims).</li>
+                            <li>Supported and then led parts of investigations into suspected employee fraud, including client meetings and updates.</li>
+                            <li>Prepared formal presentations and project updates to support clear, evidence-based decision-making.</li>
+                        </ul>
                     </div>
-                </div>
 
-                <!-- ITEM 2: AIESEC Global Volunteer – Covasna (2018) -->
-                <div class="relative mb-12 md:mb-16 group">
-                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between w-full">
-                        <!-- Content (left) -->
-                        <div class="md:w-5/12 pr-0 md:pr-8 order-3 md:order-1 bg-white p-6 border border-engineer-light shadow-sm rounded-sm w-full md:text-right text-left">
-                            <h3 class="font-bold text-engineer-dark text-lg">Global Volunteer – Discover Schools in Covasna</h3>
-                            <h4 class="font-mono text-xs text-engineer-dim mb-3">AIESEC BRASOV (VIA AIESEC HONG KONG)</h4>
-                            <p class="text-sm text-slate-600 mb-2">
-                                Spent 5 weeks in Romania delivering activities for 5th–9th grade students, promoting cultural awareness,
-                                English language skills and creative expression through games and art-based programmes.
-                            </p>
-                        </div>
-
-                        <!-- Icon -->
-                        <div class="md:w-2/12 flex justify-center order-1 md:order-2 relative py-2 md:py-0">
-                            <div class="w-12 h-12 bg-white border-2 border-engineer-dim rounded-full flex items-center justify-center shadow z-10 group-hover:scale-110 transition-transform">
-                                <i class="bi bi-globe-asia-australia text-engineer-dim text-lg"></i>
+                    <!-- Contec-Bulk -->
+                    <div class="bg-white p-6 border border-engineer-light shadow-sm rounded-sm">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1">
+                            <div>
+                                <div class="font-semibold text-engineer-dark">Design &amp; Engineering Intern</div>
+                                <div class="text-xs font-mono text-engineer-dim">
+                                    CONTEC-BULK SOLUTIONS PVT. LTD. · Haryana, India
+                                </div>
                             </div>
+                            <div class="text-xs text-slate-500">2023</div>
                         </div>
-
-                        <!-- Date -->
-                        <div class="md:w-5/12 text-center md:text-left pl-0 md:pl-8 mb-4 md:mb-0 order-2 md:order-3">
-                            <div class="font-mono text-engineer-dark font-bold text-xl">2018</div>
-                            <div class="text-sm text-slate-500">Covasna, Romania</div>
-                        </div>
+                        <ul class="mt-3 text-sm text-slate-700 space-y-1">
+                            <li>Designed idlers, head-frames and tail-frames for conveyor systems in 2D CAD.</li>
+                            <li>Assembled and grouped components into complete elevated and horizontal conveyor layouts.</li>
+                            <li>Observed the product development cycle and the importance of feedback loops between engineering teams and clients.</li>
+                        </ul>
                     </div>
-                </div>
 
-                <!-- ITEM 3: BEng Mechanical Engineering – Thapar & Trinity (2019–2023) -->
-                <div class="relative mb-12 group">
-                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between w-full">
-                        <!-- Date -->
-                        <div class="md:w-5/12 text-center md:text-right pr-0 md:pr-8 mb-4 md:mb-0 order-1 md:order-1">
-                            <div class="font-mono text-engineer-dark font-bold text-xl">2019 – 2023</div>
-                            <div class="text-sm text-slate-500">India &amp; Dublin</div>
-                        </div>
-                        
-                        <!-- Icon -->
-                        <div class="md:w-2/12 flex justify-center order-1 md:order-2 relative py-2 md:py-0">
-                            <div class="w-12 h-12 bg-white border-2 border-engineer-dim rounded-full flex items-center justify-center shadow z-10 group-hover:scale-110 transition-transform">
-                                <i class="bi bi-mortarboard-fill text-engineer-dim text-lg"></i>
+                    
+
+                    <!-- Subway -->
+                    <div class="bg-white p-6 border border-engineer-light shadow-sm rounded-sm">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1">
+                            <div>
+                                <div class="font-semibold text-engineer-dark">Crew Member (Part-time)</div>
+                                <div class="text-xs font-mono text-engineer-dim">
+                                    SUBWAY · Carrickmines, Dublin 18, Ireland
+                                </div>
                             </div>
+                            <div class="text-xs text-slate-500">2022</div>
                         </div>
-
-                        <!-- Content -->
-                        <div class="md:w-5/12 pl-0 md:pl-8 order-2 md:order-3 bg-white p-6 border border-engineer-light shadow-sm rounded-sm w-full">
-                            <h3 class="font-bold text-engineer-dark text-lg">BEng Mechanical Engineering</h3>
-                            <h4 class="font-mono text-xs text-engineer-dim mb-3">
-                                THAPAR INSTITUTE OF ENGINEERING &amp; TECHNOLOGY · TRINITY COLLEGE DUBLIN (2+2)
-                            </h4>
-                            <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                                <li>Completed the Thapar–Trinity 2+2 programme in Mechanical Engineering.</li>
-                                <li>Focused on thermodynamics, energy systems and design projects.</li>
-                                <li>Strengthened teamwork, presentations and technical writing through labs and group work.</li>
-                            </ul>
-                        </div>
+                        <ul class="mt-3 text-sm text-slate-700 space-y-1">
+                            <li>Handled customer interaction, end-of-day till closing and daily finances.</li>
+                            <li>Managed time and delivery under rush-hour pressure alongside full-time study.</li>
+                        </ul>
                     </div>
-                </div>
 
-                <!-- ITEM 4: Audi Workshops (2021) -->
-                <div class="relative mb-12 md:mb-16 group">
-                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between w-full">
-                        <!-- Content (left) -->
-                        <div class="md:w-5/12 pr-0 md:pr-8 order-3 md:order-1 bg-white p-6 border border-engineer-light shadow-sm rounded-sm w-full md:text-right text-left">
-                            <h3 class="font-bold text-engineer-dark text-lg">Intern – Service &amp; Body-Shop Workshops</h3>
-                            <h4 class="font-mono text-xs text-engineer-dim mb-3">AUDI, INDIA</h4>
-                            <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                                <li>Observed maintenance and repair workflows in service and body-shop workshops.</li>
-                                <li>Understood quality standards and customer expectations in a premium automotive setting.</li>
-                            </ul>
-                        </div>
+                    <!-- Audi -->
+                    <div class="bg-white p-6 border border-engineer-light shadow-sm rounded-sm">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1">
+                            <div><div class="font-semibold text-engineer-dark">
+    <a href="#"
+       onclick="openCertificate('audi-internship'); return false;"
+       class="inline-flex items-center gap-1 hover:underline hover:text-engineer-accent">
+        <span>Intern – Service &amp; Body-Shop Workshops</span>
+        <i class="bi bi-link-45deg text-[11px] opacity-70"></i>
+    </a>
+</div>
 
-                        <!-- Icon -->
-                        <div class="md:w-2/12 flex justify-center order-1 md:order-2 relative py-2 md:py-0">
-                            <div class="w-12 h-12 bg-white border-2 border-engineer-dim rounded-full flex items-center justify-center shadow z-10 group-hover:scale-110 transition-transform">
-                                <i class="bi bi-car-front text-engineer-dim text-lg"></i>
+
+                                
+                                <div class="text-xs font-mono text-engineer-dim">
+                                    AUDI · India
+                                </div>
                             </div>
+                            <div class="text-xs text-slate-500">2021</div>
                         </div>
-
-                        <!-- Date -->
-                        <div class="md:w-5/12 text-center md:text-left pl-0 md:pl-8 mb-4 md:mb-0 order-2 md:order-3">
-                            <div class="font-mono text-engineer-dark font-bold text-xl">2021</div>
-                            <div class="text-sm text-slate-500">India</div>
-                        </div>
+                        <ul class="mt-3 text-sm text-slate-700 space-y-1">
+                            <li>Shadowed teams in service and body-shop workshops to understand maintenance workflows and repair standards.</li>
+                            <li>Gained exposure to premium automotive quality expectations and workshop operations.</li>
+                        </ul>
                     </div>
-                </div>
 
-                <!-- ITEM 5: Subway (2022) -->
-                <div class="relative mb-12 md:mb-16 group">
-                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between w-full">
-                        <!-- Date -->
-                        <div class="md:w-5/12 text-center md:text-right pr-0 md:pr-8 mb-4 md:mb-0 order-1 md:order-1">
-                            <div class="font-mono text-engineer-dark font-bold text-xl">2022</div>
-                            <div class="text-sm text-slate-500">Dublin, Ireland</div>
-                        </div>
-                        
-                        <!-- Icon -->
-                        <div class="md:w-2/12 flex justify-center order-1 md:order-2 relative py-2 md:py-0">
-                            <div class="w-12 h-12 bg-white border-2 border-engineer-dim rounded-full flex items-center justify-center shadow z-10 group-hover:scale-110 transition-transform">
-                                <i class="bi bi-people text-engineer-dim text-lg"></i>
-                            </div>
-                        </div>
-
-                        <!-- Content -->
-                        <div class="md:w-5/12 pl-0 md:pl-8 order-2 md:order-3 bg-white p-6 border border-engineer-light shadow-sm rounded-sm w-full">
-                            <h3 class="font-bold text-engineer-dark text-lg">Crew Member (Part-time)</h3>
-                            <h4 class="font-mono text-xs text-engineer-dim mb-3">SUBWAY, CARRICKMINES</h4>
-                            <p class="text-sm text-slate-600 mb-2">
-                                Handled customer service, till closing and end-of-day finances alongside full-time study, 
-                                developing time management, teamwork and front-line problem solving.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="text-xs bg-engineer-light text-engineer-dark px-2 py-1 rounded font-mono">Customer Service</span>
-                                <span class="text-xs bg-engineer-light text-engineer-dark px-2 py-1 rounded font-mono">Cash Handling</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ITEM 6: Contec-Bulk Solutions (2023) -->
-                <div class="relative mb-12 md:mb-16 group">
-                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between w-full">
-                        <!-- Content (left) -->
-                        <div class="md:w-5/12 pr-0 md:pr-8 order-3 md:order-1 bg-white p-6 border border-engineer-light shadow-sm rounded-sm w-full md:text-right text-left">
-                            <h3 class="font-bold text-engineer-dark text-lg">Design &amp; Engineering Intern</h3>
-                            <h4 class="font-mono text-xs text-engineer-dim mb-3">CONTEC-BULK SOLUTIONS PVT. LTD.</h4>
-                            <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                                <li>Designed idlers, head-frames and tail-frames for conveyor systems.</li>
-                                <li>Assembled 2D drawings into complete elevated and horizontal conveyors.</li>
-                                <li>Observed product development and cross-department coordination.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Icon -->
-                        <div class="md:w-2/12 flex justify-center order-1 md:order-2 relative py-2 md:py-0">
-                            <div class="w-12 h-12 bg-white border-2 border-engineer-dim rounded-full flex items-center justify-center shadow z-10 group-hover:scale-110 transition-transform">
-                                <i class="bi bi-diagram-3 text-engineer-dim text-lg"></i>
-                            </div>
-                        </div>
-
-                        <!-- Date -->
-                        <div class="md:w-5/12 text-center md:text-left pl-0 md:pl-8 mb-4 md:mb-0 order-2 md:order-3">
-                            <div class="font-mono text-engineer-dark font-bold text-xl">2023</div>
-                            <div class="text-sm text-slate-500">Haryana, India</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ITEM 7: Analyst – EY (2024–2025) -->
-                <div class="relative mb-12 md:mb-16 group">
-                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between w-full">
-                        <!-- Date (right on desktop) -->
-                        <div class="md:w-5/12 text-center md:text-left pl-0 md:pl-8 mb-4 md:mb-0 order-2 md:order-3">
-                            <div class="font-mono text-engineer-dark font-bold text-xl">2024 – 2025</div>
-                            <div class="text-sm text-slate-500">Mumbai, India</div>
-                        </div>
-
-                        <!-- Icon -->
-                        <div class="md:w-2/12 flex justify-center order-1 md:order-2 relative py-2 md:py-0">
-                            <div class="w-12 h-12 bg-white border-2 border-engineer-dim rounded-full flex items-center justify-center shadow z-10 group-hover:scale-110 transition-transform">
-                                <i class="bi bi-briefcase text-engineer-dim text-lg"></i>
-                            </div>
-                        </div>
-
-                        <!-- Content (left on desktop) -->
-                        <div class="md:w-5/12 pr-0 md:pr-8 order-3 md:order-1 bg-white p-6 border border-engineer-light shadow-sm rounded-sm w-full md:text-right text-left">
-                            <h3 class="font-bold text-engineer-dark text-lg">Analyst</h3>
-                            <h4 class="font-mono text-xs text-engineer-dim mb-3">ERNST &amp; YOUNG LLP (EY), MUMBAI</h4>
-                            <p class="text-sm text-slate-600 mb-2">
-                                Worked on fraud investigations (ESI reviews) and construction disputes (delay, variation and contractual claims),
-                                moving from support work to leading parts of projects with regular client interaction and formal presentations.
-                            </p>
-                            <div class="flex flex-wrap gap-2 md:justify-end">
-                                <span class="text-xs bg-engineer-light text-engineer-dark px-2 py-1 rounded font-mono">Investigations</span>
-                                <span class="text-xs bg-engineer-light text-engineer-dark px-2 py-1 rounded font-mono">Construction Claims</span>
-                                <span class="text-xs bg-engineer-light text-engineer-dark px-2 py-1 rounded font-mono">Delay Analysis</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ITEM 8: MSc Project Management (2025–Present) -->
-                <div class="relative mb-12 md:mb-16 group">
-                    <div class="flex flex-col md:flex-row items-center md:items-start justify-between w-full">
-                        <!-- Date -->
-                        <div class="md:w-5/12 text-center md:text-right pr-0 md:pr-8 mb-4 md:mb-0 order-1 md:order-1">
-                            <div class="font-mono text-engineer-accent font-bold text-xl">2025 – Present</div>
-                            <div class="text-sm text-slate-500">Dublin, Ireland</div>
-                        </div>
-                        
-                        <!-- Icon -->
-                        <div class="md:w-2/12 flex justify-center order-1 md:order-2 relative py-2 md:py-0">
-                            <div class="w-12 h-12 bg-white border-2 border-engineer-accent rounded-full flex items-center justify-center shadow z-10 group-hover:scale-110 transition-transform">
-                                <i class="bi bi-book text-engineer-accent text-lg"></i>
-                            </div>
-                        </div>
-
-                        <!-- Content -->
-                        <div class="md:w-5/12 pl-0 md:pl-8 order-2 md:order-3 bg-white p-6 border border-engineer-light shadow-sm rounded-sm w-full">
-                            <h3 class="font-bold text-engineer-dark text-lg">MSc in Project Management</h3>
-                            <h4 class="font-mono text-xs text-engineer-dim mb-3">UCD MICHAEL SMURFIT GRADUATE BUSINESS SCHOOL</h4>
-                            <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                                <li>Focus on project planning, risk, leadership and change management.</li>
-                                <li>Applying project tools to engineering and energy-transition contexts.</li>
-                                <li>Building on mechanical engineering and consulting experience.</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
 
-            <!-- Skills Metrics -->
-            <div class="mt-16 grid md:grid-cols-2 gap-8">
-                <!-- Engineering Skills -->
-                <div class="bg-white p-8 shadow-sm border-t-4 border-engineer-accent">
-                    <h3 class="font-mono text-engineer-dark mb-6 flex items-center">
-                        <i class="bi bi-tools mr-2"></i> CAD, SIMULATION &amp; IOT
-                    </h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between text-xs font-bold mb-1">
-                                <span>SOLIDWORKS / CREO</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="w-full bg-slate-200 h-2 rounded-sm overflow-hidden">
-                                <div class="bg-engineer-accent h-full w-[85%]"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between text-xs font-bold mb-1">
-                                <span>AUTOCAD / GSTARCAD</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="w-full bg-slate-200 h-2 rounded-sm overflow-hidden">
-                                <div class="bg-engineer-accent h-full w-[80%]"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between text-xs font-bold mb-1">
-                                <span>ARDUINO / RASPBERRY PI</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="w-full bg-slate-200 h-2 rounded-sm overflow-hidden">
-                                <div class="bg-engineer-dim h-full w-[75%]"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project & Soft Skills -->
-                <div class="bg-white p-8 shadow-sm border-t-4 border-engineer-dark">
-                    <h3 class="font-mono text-engineer-dark mb-6 flex items-center">
-                        <i class="bi bi-kanban mr-2"></i> PROJECT &amp; PEOPLE
-                    </h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between text-xs font-bold mb-1">
-                                <span>MS PROJECT / JIRA</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="w-full bg-slate-200 h-2 rounded-sm overflow-hidden">
-                                <div class="bg-engineer-dark h-full w-[80%]"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between text-xs font-bold mb-1">
-                                <span>AGILE / SCRUM MINDSET</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="w-full bg-slate-200 h-2 rounded-sm overflow-hidden">
-                                <div class="bg-engineer-dark h-full w-[75%]"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between text-xs font-bold mb-1">
-                                <span>STAKEHOLDER COMMUNICATION</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="w-full bg-slate-200 h-2 rounded-sm overflow-hidden">
-                                <div class="bg-engineer-accent h-full w-[95%]"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- QUIRKS & INTERESTS -->
-    <section id="quirks" class="py-20 bg-slate-50 border-t border-engineer-border">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-engineer-dark mb-10 flex items-center gap-2">
-                QUIRKS & VARIATIONS
-                <i class="bi bi-nut text-engineer-dim animate-spin" style="animation-duration: 3s;"></i>
-            </h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Card 1 -->
-                <div class="group bg-white p-6 rounded-sm border border-slate-200 hover:border-engineer-accent hover:shadow-lg transition-all cursor-pointer relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-1 h-full bg-engineer-dim group-hover:bg-engineer-accent transition-colors"></div>
-                    <div class="pl-4">
-                        <i class="bi bi-cup-hot text-3xl text-engineer-dim group-hover:text-engineer-accent mb-3 block"></i>
-                        <h3 class="font-mono font-bold text-lg mb-2">Fuel Intake</h3>
-                        <p class="text-sm text-slate-600">
-                            Engineered to convert 3 espressos daily into GANTT charts and 3D models. Efficiency drops significantly below 50mg caffeine levels.
-                        </p>
+
+            <!-- 5. EDUCATION + 6. SOCIAL SKILLS -->
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <!-- EDUCATION -->
+                <div class="bg-white p-6 md:p-8 border border-engineer-light shadow-sm rounded-sm">
+                    <h3 class="font-mono text-sm text-engineer-accent tracking-[0.25em] mb-4">EDUCATION</h3>
+
+                    <div class="space-y-4 text-sm text-slate-700">
+                        <div>
+                            <div class="flex justify-between items-baseline">
+    <span class="font-semibold text-engineer-dark">
+        <a href="#"
+           onclick="openCertificate('msc-pm'); return false;"
+           class="inline-flex items-center gap-1 hover:underline hover:text-engineer-accent">
+            <span>MSc in Project Management</span>
+            <i class="bi bi-link-45deg text-[11px] opacity-70"></i>
+        </a>
+    </span>
+    <span class="text-xs text-slate-500">2025–Present</span>
+</div>
+
+                            <div class="text-xs font-mono text-engineer-dim">
+                                UCD MICHAEL SMURFIT GRADUATE BUSINESS SCHOOL · Dublin, Ireland
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-baseline">
+    <span class="font-semibold text-engineer-dark">
+        <a href="#"
+           onclick="openCertificate('msc-pm'); return false;"
+           class="inline-flex items-center gap-1 hover:underline hover:text-engineer-accent">
+            <span>BEng in Mechanical Engineering</span>
+            <i class="bi bi-link-45deg text-[11px] opacity-70"></i>
+        </a>
+    </span>
+    <span class="text-xs text-slate-500">2019-2023</span>
+</div>
+
+                            <div class="text-xs font-mono text-engineer-dim">
+                                TRINITY COLLEGE DUBLIN &amp; THAPAR INSTITUTE OF ENGINEERING &amp; TECHNOLOGY (2+2 Programme)
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-baseline">
+                                <span class="font-semibold text-engineer-dark">BEng Computer Engineering (Years 1–2)</span>
+                                <span class="text-xs text-slate-500">2017–2019</span>
+                            </div>
+                            <div class="text-xs font-mono text-engineer-dim">
+                                THE UNIVERSITY OF HONG KONG · Hong Kong
+                            </div>
+                        </div>
+
+                        <div class="pt-2 border-t border-slate-200 mt-2">
+                            <div class="font-semibold text-engineer-dark text-xs mb-1">School</div>
+                            <p class="text-xs text-slate-600">
+                                Class XII (2017): 92.8% · Class X (2015): CGPA 10.0 / 10.0
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="group bg-white p-6 rounded-sm border border-slate-200 hover:border-engineer-accent hover:shadow-lg transition-all cursor-pointer relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-1 h-full bg-engineer-dim group-hover:bg-engineer-accent transition-colors"></div>
-                    <div class="pl-4">
-                        <i class="bi bi-puzzle text-3xl text-engineer-dim group-hover:text-engineer-accent mb-3 block"></i>
-                        <h3 class="font-mono font-bold text-lg mb-2">Lego Engineer</h3>
-                        <p class="text-sm text-slate-600">
-                            Owns over 20 Technic sets. Believe that if you can build the Millennium Falcon, you can build a project schedule.
-                        </p>
-                    </div>
-                </div>
+                <!-- SOCIAL SKILLS -->
+                <div class="bg-white p-6 md:p-8 border border-engineer-light shadow-sm rounded-sm">
+                    <h3 class="font-mono text-sm text-engineer-accent tracking-[0.25em] mb-4">SOCIAL SKILLS</h3>
 
-                <!-- Card 3 -->
-                <div class="group bg-white p-6 rounded-sm border border-slate-200 hover:border-engineer-accent hover:shadow-lg transition-all cursor-pointer relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-1 h-full bg-engineer-dim group-hover:bg-engineer-accent transition-colors"></div>
-                    <div class="pl-4">
-                        <i class="bi bi-controller text-3xl text-engineer-dim group-hover:text-engineer-accent mb-3 block"></i>
-                        <h3 class="font-mono font-bold text-lg mb-2">Sim Planner</h3>
-                        <p class="text-sm text-slate-600">
-                            Hundreds of hours in Factorio and Cities: Skylines. Optimizing supply chains is my idea of a relaxing "Friday Night".
-                        </p>
+                    <div class="space-y-4 text-sm text-slate-700">
+                        <div>
+                            <div class="font-semibold text-engineer-dark mb-1">Collaboration &amp; Leadership</div>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Global Volunteer with AIESEC Hong Kong, delivering classroom activities for students in Romania.</li>
+                                <li>Convener of Literary Society &amp; Street Play group for two semesters; led and performed in multiple plays.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-engineer-dark mb-1">Communication</div>
+                            <p>
+                                Comfortable with client-facing work, presentations and cross-functional collaboration across engineering,
+                                consulting and retail environments.
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-engineer-dark mb-1">Languages</div>
+                            <p>
+                                English and Hindi – excellent (spoken, written, reading); Bengali – mother tongue.
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="font-semibold text-engineer-dark mb-1">Interests &amp; Hobbies</div>
+                            <p>
+                                Writing short stories, experimenting with Arduino / Raspberry Pi side projects, cooking and listening to music.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -763,6 +688,21 @@
                 document.body.removeChild(tempInput);
             }
         }
+
+                // Open certificates page in a new tab so it can close itself
+        function openCertificate(anchor) {
+            const url = 'certificates.html#' + anchor;
+            const newWin = window.open(url, '_blank');
+
+            // If popup blocked, fall back to opening in the same tab
+            if (!newWin) {
+                window.location.href = url;
+            } else {
+                // Optional: extra safety
+                newWin.opener = null;
+            }
+        }
+
 
 
     </script>
